@@ -1,0 +1,65 @@
+#webEvolution{
+    letter-spacing: 0.2em !important;
+    padding-top: 168px !important;
+    
+}
+
+#andTogether{
+    padding-top: 98px !important;
+
+
+}
+
+#aboutMe{
+    border: 1.1dvh groove black !important;
+}
+
+#aboutMe-description{
+    border: 0.5dvh groove red !important;
+}
+#aboutMe-img{
+    border: 2 px solid blue !important;
+}
+
+#profile-picture-container{
+    border: 2px solid blue !important;
+    margin: 2px solid orange !important;
+    height: 0.1dvh !important;
+}
+
+#tech-skills-title{
+    border:0.2dvh solid yellow !important;
+    text-align: center !important;
+}
+
+#education-certifications-title{
+    border:0.2dvh solid blue !important;
+    text-align: center !important;
+}
+
+#projects-title{
+    border:0.2dvh solid Green !important;
+    text-align: center !important;
+}
+
+#footer{
+    background-color: gray !important;
+}
+
+#contact{
+    border: 0.5dvh groove gold !important;
+    background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%) !important;
+}
+
+#aboutMe-img{
+    width: 30dvw !important;
+    margin: 1em !important;
+
+}
+
+#profile-info{
+    width: 40dvw !important;
+    margin: 1em !important;
+    background-color: red;
+
+}
