@@ -57,7 +57,7 @@
 
       <!-- Start of Background image -->
       <div
-        class="p-1 text-center bg-image"
+        class="p-1 text-center bg-image" id="hero"
         style="
           background-image: url('https://d-romero-dev.github.io/images/hero.jpg');
           background-repeat: no-repeat;
@@ -148,7 +148,7 @@
 
         <!--Start of Tech Stack-->
 
-        <section class="container-fluid d-flex p-0">
+        <section class="container-fluid d-flex p-0" id="tech-stack-start">
           <div class="container-fluid" id="media-objetcs-container">
             <h2 class="mt-2 align-items-sm-start" id="tech-stack-title">
               Tech Stack:
@@ -487,22 +487,34 @@
     <!--End of Contact Me!-->
 
     <!---Start of Footer-->
-    
-        <footer class="container-fluid d-sm-flex flex-sm-column align-self-sm-center p-1" id="footer">
-            <div  class="container-fluid d-sm-flex flex-sm-column" id="footer">
-                
-                <div class="card">
-                    
-                    <div class="card-body">
-                      <h5 class="card-title">Footer</h5>
-                      <p class="card-text">Home<br>About<br>Projects<br>Contact<br></br></p>
-                      <p class="card-text"><small class="text-muted">2023 All rights reserved © 
-                        <br>Made with ♥ by d-romero.dev 
-                      </small></p>
+
+    <footer class="container-fluid d-sm-flex flex-sm-column align-self-sm-center p-1" id="footer">
+        <div class="container-fluid d-sm-flex flex-sm-column mb-1" id="footer">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title" id="footer-title">d-romero.dev</h5>
+                    <p class="card-text">
+                        <a href="#hero">Home</a><br>
+                        <a href="#andTogether">About Me</a><br>
+                        <a href="#tech-stack-start">Tech Stack</a><br>
+                        <a href="#education-and-certifications">Education & Certifications</a><br>
+                        <a href="#projects-title">Projects</a><br>
+                    </p>
+                    <div class="d-flex justify-content-between align-items-end">
+                        <p class="card-text">
+                            <small class="text-muted">2023 All rights reserved ©</small>
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted">Made with ♥ by d-romero.dev</small>
+                        </p>
                     </div>
-                    
+                </div>
             </div>
-        </footer>
+        </div>
+    </footer>
+    
+
+ 
 
     
   </body>
