@@ -189,7 +189,7 @@ nav{
 
 
 #projects-title{
-    border: 0.2dvh solid green !important;
+    border: 0.2dvh solid #feda6a !important;
     text-align: center !important;
     color:#d4d4dc;
 }
@@ -241,18 +241,127 @@ nav{
     
 }
 
+@media (min-width: 426px){
+    .project-card{
+        width:30%;
+    }
+}
 
+.project-card:hover{
+    background-color: #d4d4dc;
+    box-shadow: #1d1e22;
+   
+    border-bottom: 0.4em #393f4d solid;
+    border-right: 0.5em #feda6a solid;
+    border-left: 0.2em #feda6a solid;
+    
 
+    transform: scale(1.05);
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.project-card:hover .card-title {
+    color: #feda6a;
+    font-style:oblique;
+    background-color: #393f4d;
+    border-radius: 3vw;
+    padding: 0.6%;
+    text-align: center;
+}
 
-#footer{
-    background-color: gray !important;
+.project-card:hover .card-body {
+    color: #1d1e22;
+    font-style:oblique;
+    text-align: center;
 }
 
 #contact{
-    border: 0.5dvh groove gold !important;
-    background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%) !important;
+    
+    border: 1.1dvh groove #1d1e22 !important;
+    background: #feda6a !important;
 }
+
+
+#contact-title{
+    border: 0.2dvh solid #feda6a !important;
+    text-align: center !important;
+    color:#1d1e22;
+}
+
+#btn-linkedin {
+    color: #d4d4dc;
+    background-color: #0077B5;
+    border-color: #FFFFFF;
+    
+}
+
+
+#btn-linkedin:hover {
+    color: #feda6a;
+    background-color: #1d1e22;
+    border-color:   #d4d4dc;
+}
+
+#btn-github {
+    color: #fafbfc;
+    background-color: #24292e;
+    border-color: #2dba4e;
+    
+}
+
+
+#btn-github:hover {
+    color: #feda6a;
+    background-color: #1d1e22;
+    border-color:   #d4d4dc;
+}
+
+#contact-me-subtitle{
+    font-style:italic;
+}
+
+#btn-email{
+    color: #f5f5f5;
+    background-color: #3b60c4;
+    border-top-color: #c71610;
+    border-right-color: #f2a60c;
+    border-bottom-color: #3b60c4;
+    border-left-color: #08851b;
+}
+
+#btn-email:hover{
+    color: #feda6a;
+    background-color: #1d1e22;
+    border-color:   #d4d4dc;
+}
+
+#btn-download-resume{    
+    color: #feda6a;
+    background-color: #1d1e22;
+    border-color:   #d4d4dc;
+}
+
+#btn-download-resume:hover{
+    color: #1d1e22;
+    background-color: #d4d4dc;
+    border-color:   #feda6a;
+}
+
+#btn-connect-with-me{
+    color: #feda6a;
+    background-color: #1d1e22;
+    border-color:   #d4d4dc;
+
+}
+
+#btn-conect-with-me:hover{
+    color: #1d1e22;
+    background-color: #d4d4dc;
+    border-color:   #1d1e22;
+}
+
+
 
 #aboutMe-img{
     width: 30dvw !important;
@@ -265,9 +374,14 @@ nav{
     margin: 1em !important;
     background-image: linear-gradient(to right top, #000000, #4a2d2d, #925a47, #d19458, #feda6a)!important;
     box-shadow: 0 0  1rem 3rem rgba(0,0,0,0.2);
+    border: 1.1dvh groove black !important;
 
 }
 
 #profile-picture{
     width: 10px !important;
+}
+
+#footer{
+    background-color: gray !important;
 }

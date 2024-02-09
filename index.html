@@ -96,7 +96,7 @@
 
     <!-- Start of About me -->
     <main>
-      <div class="container-fluid d-lg-flex flex-lg-row-reverse m-1 p-2" id="aboutMe">
+      <div class="container-fluid d-lg-flex flex-lg-row-reverse m-0 p-2" id="aboutMe">
 
         <div class="p-2 m-5 flex-sm-column flex-row-reverse flex-lg-row-reverse " id="profile-info">
           <section
@@ -372,54 +372,60 @@
     <!--Start of Projects-->
     <section class="container-fluid d-sm-flex flex-sm-column align-self-sm-center p-1">
         <div  class="container-fluid d-sm-flex flex-sm-column" id="projects">
-            <h2 class="mt-2 align-items-sm-start" id="projects-title">
-                Projects:
-              </h2>
-        <div class="card-deck">
-            <div class="card m-3 p-2">
-              <img class="card-img-top" src="..." alt="project-1-preview">
+            <h2 class="mt-2 align-items-sm-start" id="projects-title">Projects:</h2>
+
+        <div class="card-deck d-lg-flex">
+
+            <div class="card project-card m-3 p-2">
+              <img class="card-img-top m-0 p-1 align-items-lg-center justify-content-sm-end" src="./img/website-logo.webp" alt="project-1-preview" id="project-one-img">
               <div class="card-body">
                 <h5 class="card-title">PROJECT 1</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
+
             </div>
-            <div class="card m-3 p-2">
-              <img class="card-img-top" src="..." alt="project-2-preview">
+
+            <div class="card project-card m-3 p-2">
+              <img class="card-img-top align-items-lg-center justify-content-sm-end" src="./img/website-logo.webp" alt="project-2-preview">
               <div class="card-body">
                 <h5 class="card-title">PROJECT 2</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
+
             </div>
-            <div class="card m-3 p-2">
-              <img class="card-img-top" src="..." alt="project-3-preview">
+
+            <div class="card project-card m-3 p-2">
+              <img class="card-img-top" src="./img/website-logo.webp" alt="project-3-preview">
               <div class="card-body">
                 <h5 class="card-title">PROJECT 3</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
+
             </div>
+
           </div>
         </div>
     </section>
     <!--End of Projects-->
     
     <!--Start of Contact Me!-->
-    <section class="container-fluid d-sm-flex flex-sm-column align-self-sm-center p-1">
-        <div  class="container-fluid d-sm-flex flex-sm-column" id="contact">
-            <h2 class="mt-2 align-items-sm-start" id="contact-title"> Contact Me!:</h2>
-            <p>
-                <a class="btn btn-primary m-3 p-2" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Linkedin Profile</a>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">GitHub Profile</button>
-                <button class="btn btn-primary m-3 p-2" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">CONTACT ME!</button>
+    <section class="container-fluid d-sm-flex flex-sm-column align-self-sm-center p-0 m-0">
+        <div  class="container-fluid  flex-sm-column  text-sm-center" id="contact">
+            <h2 class="mt-2 align-items-sm-start" id="contact-title"> Contact Me!</h2>
+            <p></p>
+                <a class="btn m-2 p-1" id="btn-linkedin" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >Linkedin Profile</a>
+                <button class="btn m-2 p-1" id="btn-github" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">GitHub Profile</button>
+                
               </p>
-              <div class="row">
-                <div class="col">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-sm-3 ">
                   <div class="collapse multi-collapse" id="multiCollapseExample1">
                     <div class="card card-body">
                         <div class="card">
-                            <img class="card-img-top" src="./img/Profile-picture.webp" alt="linkedin-profile-picture">
+                            <img class="card-img-top img-fluid" src="./img/Profile-picture.webp" alt="linkedin-profile-picture">
                             <div class="card-body">
                               <h5 class="card-title">Linkedin Profile</h5>
                               <p class="card-text"><a href="https://linkedin.com"> Contact me via Linkedin!</a></p>
@@ -431,7 +437,7 @@
                 <div class="col">
                   <div class="collapse multi-collapse" id="multiCollapseExample2">
                     <div class="card card-body">
-                        <div class="card">
+                        <div class="card p-1 m-1">
                             <img class="card-img-top" src="./img/GitHub-profile-pic.webp" alt="github-profile-picture">
                             <div class="card-body">
                               <h5 class="card-title">GitHub Profile</h5>
@@ -443,7 +449,40 @@
                   </div>
                 </div>
               </div>
+              
         </div>
+
+        <div class="container-fluid flex-sm-column text-sm-center">
+            
+            <p>
+                <button class="btn m-2 p-1" id="btn-connect-with-me" type="button" data-bs-toggle="collapse" data-bs-target="#contactCollapse" aria-expanded="false" aria-controls="contactCollapse">Connect With Me!</button>
+            </p>
+            <div class="collapse" id="contactCollapse">
+                <div class="card card-body">
+                    <div class="card">
+                        
+                        <div class="card-body">
+                            
+                            <p class="card-text" id="contact-me-subtitle">
+                                Feel free to reach out for any inquiries or download my resume.
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">Ready to make things happen? Let's get started!</small>
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a class="btn m-2" id="btn-email" href="mailto:your.email@example.com">Send Email</a>
+                                <a class="btn btn-success m-2" id="btn-download-resume" href="./path/to/your/resume.pdf" download>Download Resume (PDF)</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
     </section>
     <!--End of Contact Me!-->
 
