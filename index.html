@@ -17,8 +17,12 @@
   <body>
     <header>
         <!-- Start of Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-          <div class="container-fluid">
+        <nav class="navbar  justify-content-sm-center align-items-sm-center navbar-expand-lg navbar-light fixed-top m-0 p-1">
+            
+          <div class="container-fluid m-0 p-0" id="navigation-bar">
+            <img src="./img/website-logo.webp" alt="website-logo" id="website-logo">
+            <span id="logo">d-romero.dev</span>
+            
             <button
               class="navbar-toggler"
               type="button"
@@ -31,7 +35,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarExample01">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-bar-items">
                 <li class="nav-item active">
                   <a class="nav-link" aria-current="page" href="#">About Me</a>
                 </li>
@@ -64,6 +68,9 @@
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
           <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white">
+                <br>
+                <br>
+                <br>
               <h1 class="p-3 m-4 pt-5">Looking for a Web Developer?</h1>
               <h5
                 class="mr-4 ml-4 m-2 mb-1 mt-5 mb-4 pb-3 pt-5"
@@ -89,55 +96,65 @@
 
     <!-- Start of About me -->
     <main>
-      <div class="container-fluid d-sm-flex flex-sm-column justify-content-lg-end align-self-lg-end" id="aboutMe">
-        <div class="container-fluid p-0 justify-content-lg-start align-self-ld-start" id="profile-info">
+      <div class="container-fluid d-lg-flex flex-lg-row-reverse m-1 p-2" id="aboutMe">
+
+        <div class="p-2 m-5 flex-sm-column flex-row-reverse flex-lg-row-reverse " id="profile-info">
           <section
-            class="container-fluid d-sm-flex flex-sm-column align-self-sm-center p-1 align-self-lg-end"
+            class="container-fluid flex-sm-column justify-content-sm-center align-items-sm-center align-self-sm-center"
             id="aboutMe-img"
           >
             <img
-              class="d-flex align-self-sm-center mb-3 align-self-lg-end"
+              class="justify-content-sm-center align-items-sm-center justify-content-lg-start align-self-ld-start shaking-image"
               src="./img/Profile-picture.webp"
               alt="profile-picture"
             />
-            <div class="media-body justify-content-md-center justify-content-lg-center align-self-md-center align-self-lg-end">
-              <h5 class="mt-0 align-items-sm-center">
+            <div class="media-body justify-content-md-center align-self-md-center">
+              <h5 class="mt-0 align-items-sm-stretch" id="profile-title">
                 Front-End Web Developer Junior
               </h5>
-              <h6 class="mt-0 align-items-sm-center">
+              <h6 class="mt-0 align-items-sm-stretcht" id="profile-subtitle">
                 Crafting Exceptional Web Experiences
               </h6>
             </div>
           </section>
         </div>
-        <div class="container-fluid d-sm-flex flex-sm-column justify-content-lg-start align-self-lg-start">
-            <section class="container-fluid p-0 align-self-lg-start align-items-lg-start" id="aboutMe-description">
-              <p class="p-1">
-                My name is Damián Romero. I am a young person committed to the
+
+        <div class="d-sm-flex">
+            <section class="container-fluid" id="aboutMe-description">
+                
+               <p class="p-2 m-1">
+                <span id="my-name">My name is Damián Romero.</span> I am a young person committed to the
                 search for a great and enriching work experience. With a desire,
                 enthusiasm, and impetus to enter the labor market and the technology
                 industry through ambition, responsibility, and the desire to learn.
-                <br /><br />I am characterized by being methodical, organizational,
-                committed, and enthusiastic about the goals I set for myself. Focus
-                and attention to detail, plus an associative ability to work as a
-                team and achieve common goals. <br /><br />Every time, I look
+                </p>
+
+                <p class="p-2 m-1">I am characterized by being methodical, organizational,
+                    committed, and enthusiastic about the goals I set for myself. Focus
+                    and attention to detail, plus an associative ability to work as a
+                    team and achieve common goals.
+                </p>
+
+                <p class="p-2 m-1">Every time, I look
                 forward to overcoming the difficulties presented to me, acting
                 intelligently and perseveringly until the desired results are
                 achieved.
-              </p>
+                </p>
+              
             </section>
             </div>
         </div>
         
 
+        <!--Start of Tech Stack-->
 
         <section class="container-fluid d-flex p-0">
           <div class="container-fluid" id="media-objetcs-container">
-            <h2 class="mt-2 align-items-sm-start" id="tech-skills-title">
-              Tech Skills:
+            <h2 class="mt-2 align-items-sm-start" id="tech-stack-title">
+              Tech Stack:
             </h2>
             <ul class="list-unstyled">
-              <li class="media d-flex align-self-sm-baseline">
+              <li class=" tech-stack-item media d-flex align-self-sm-baseline">
                 <img class="m-3" src="./img/HTML-logo.webp" alt="HTML5-logo" />
                 <div class="media-body">
                   <h5 class="mt-3 mb-1">HTML:</h5>
@@ -145,7 +162,7 @@
                   structure of online content.
                 </div>
               </li>
-              <li class="media d-flex align-self-sm-baseline">
+              <li class="media  tech-stack-item d-flex align-self-sm-baseline">
                 <img class="m-3" src="./img/CSS-logo.webp" alt="CSS-logo" />
                 <div class="media-body">
                   <h5 class="mt-3 mb-1">CSS:</h5>
@@ -154,23 +171,22 @@
                   to life on the screen.
                 </div>
               </li>
-              <li class="media d-flex align-self-sm-baseline">
+              <li class="media tech-stack-item d-flex align-self-sm-baseline">
                 <img
                   class="m-3 align-self-center"
                   src="./img/JavaScript-logo.webp"
                   alt="JavaScript-logo"
                 />
                 <div class="media-body">
-                  <h5 class="mt-3 mb-1 m-1 d-flex align-item-sm-center">
+                  <h5 class="mt-3 mb-1">
                     JavaScript:
                   </h5>
-                  Renowned as the programming backbone of web pages. The go-to
-                  for influencing and controlling web page dynamics. Operating
-                  on the client side, it empowers the stylization and
-                  programming of web page behavior.
+                  Renowned as the programming backbone of web pages.<br> The go-to
+                  for influencing and controlling web page dynamics. Empowering stylization
+                  of web page behaviors.
                 </div>
               </li>
-              <li class="media d-flex align-self-sm-baseline">
+              <li class="media tech-stack-item d-flex align-self-sm-baseline">
                 <img
                   class="m-3 align-self-center"
                   src="./img/Bootstrap-logo.webp"
@@ -199,11 +215,82 @@
         class="container-fluid d-sm-flex flex-sm-column"
         id="education-and-certifications"
       >
-      <h2 class="mt-2 align-items-sm-start" id="education-certifications-title">
+      <h2 class=" mt-2 align-items-sm-start" id="education-certifications-title">
         Education & Certifications:
       </h2>
-      <div class="card  m-4 p-1" id="first-certification">
-        <img class="card-img-top" src="./img/Functional_Testing_Certification.jpg" alt="Card image cap" />
+
+      <div class="card rotate-card image-card-4 border-warning m-4 text-white text-center p-3 align-self-lg-center" id="colored-certification-card">
+        <blockquote class="blockquote mb-0">
+            <img class="card-img-top" src="./img/JAP_Certification.jpg" alt="Card image cap" />
+            <h5 class="card-title m-2 p-2" id="colored-certification-title">JOVENES A PROGRAMAR 2023 - WEB DEVELOPMENT</h5>
+            <br>
+          <p><span>Programming Fundamentals:</span>
+            <br>
+            <ul id="colored-certification-bullets">
+                <li>• +100 hours at Fundamentals of Programming.</li>
+                <br>
+                <li>• Strong understanding of programming principles.</li>
+                <br>
+                <li>• Problem-solving skills and adherence to good practices.</li>
+            </ul>                    
+            <br>
+            <p><span>Technical Web Dev Skills:</span>
+              <br>
+              <ul id="colored-certification-bullets">
+                  <li>• +210 hours dedicated to technical web development skills.</li>
+                  <br>
+                  <li>• Proficiency with common web stack technologies: HTML, CSS, and JavaScript.</li>
+                </ul>                    
+              <br>
+              <p><span>Computational Thinking:</span>
+                <br>
+                <ul id="colored-certification-bullets">
+                    <li>• Emphasis on code reuse, efficiency, and maintenance.</li>
+                    <br>
+                    <li>• Breakdown of problems into smaller modules using defined functions.</li>
+                  </ul>                    
+                <br>
+                <p><span>Object-Oriented Programming (OOP) Foundations:</span>
+                    <br>
+                    <ul id="colored-certification-bullets">
+                        <li>• Classes, Objects, Heritage, Polymorphism, Encapsulation.</li>
+                    </ul>                    
+                    <br>
+                    <p><span>Soft Skills Development:</span>
+                        <br>
+                        <ul id="colored-certification-bullets">
+                            <li>• Time management for achieving greater productivity and goals.</li>
+                            <br>
+                            <li>• +62 hours dedicated to acquiring and practicing Soft Skills.</li>
+                            <br>
+                            <li>• Encouragement of teamwork. Sharing knowledge.</li>
+                            <br>
+                            <li>• Effective work planning & prioritization of tasks.</li>
+                        </ul>                    
+                        <br>
+                        <p><span>Final Project:</span>
+                            <br>
+                            <ul id="colored-certification-bullets">
+                                <li>• E-commerce website project. Worked within a 6-developer team.</li>
+                            </ul>                    
+                            <br>
+                        </p>
+          <footer class="blockquote-footer">
+            <small>
+              From Dec 2022 to Dec 2023 // <cite title="Source Title">Front-End Web Developer Junior.</cite>
+            </small>
+          </footer>
+        </blockquote>
+
+
+      </div>
+
+
+
+
+
+      <div class="card rotate-card image-card-1 m-4 p-1 border-warning align-self-lg-center" id="first-certification">
+        <img class="card-img-top" src="./img/Functional_Testing_Certification.jpg" alt="Card image cap"/>
         <div class="card-body">
           <h5 class="card-title">Functional Manual Testing</h5>
           <p class="card-text">
@@ -218,7 +305,7 @@
           </p>
         </div>
       </div>
-          <div class="card  m-4 p-1" id="second-certification">
+          <div class="card rotate-card image-card-2 m-4 p-1 border-warning align-self-lg-center" id="second-certification">
             <img class="card-img-top" src="./img/Web_Programming_From_Zero_Certification.jpeg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">Web Programming From Zero</h5>
@@ -230,7 +317,7 @@
               </p>
             </div>
           </div>
-          <div class="card  m-4 p-1" id="third-certification">
+          <div class="card rotate-card image-card-3 m-4 p-1 border-warning align-self-lg-center" id="third-certification">
             <img class="card-img-top" src="./img/Programming_From_Zero_Certification.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">Programming from Zero</h5>
@@ -244,45 +331,9 @@
               </p>
             </div>
           </div>
-          <div class="card  m-4 bg-primary text-white text-center p-3" id="colored-certification-card">
-            <blockquote class="blockquote mb-0">
-                <img class="card-img-top" src="./img/JAP_Certification.jpg" alt="Card image cap" />
-                <h5 class="card-title m-2 p-2">JOVENES A PROGRAMAR 2023 - WEB DEVELOPMENT</h5>
-              <p>Programming Fundamentals:
-                <br>
-                • +100 hours at Fundamentals of Programming.
-                • Strong understanding of programming principles.
-                • Problem-solving skills and adherence to good practices.
-                <br><br>
-                Technical Web Development Skills:
-                <br>
-                • +210 hours dedicated to technical web development skills.
-                • Proficiency with common web stack technologies: HTML, CSS, and JavaScript.
-                Computational Thinking:
-                • Breakdown of problems into smaller modules using defined functions.
-                • Emphasis on code reuse, efficiency, and maintenance.
-                <br><br>
-                Object-Oriented Programming (OOP) Foundations:<br>
-                • Classes, Objects, Heritage, Polymorphism, Encapsulation.
-                <br><br>
-                Soft Skills Development:
-                <br>
-                • +62 hours dedicated to acquiring and practicing Soft Skills.
-                • Encouragement of teamwork. Sharing knowledge.
-                • Effective work planning. Prioritization of tasks and time management for achieving greater
-                productivity and goals.
-                <br><br>
-                Final Project:
-                <br>
-                • E-commerce website project. Worked within a 6-developer team.</p>
-              <footer class="blockquote-footer">
-                <small>
-                  From Dec 2022 to Dec 2023 <cite title="Source Title">Front-End Web Developer Junior</cite>
-                </small>
-              </footer>
-            </blockquote>
-          </div>
-            <div class="card m-4 p-1" id="fourth-certification">
+
+
+            <div class="card rotate-card image-card-5 m-4 p-1 border-warning align-self-lg-center" id="fourth-certification">
                 <img class="card-img-top" src="./img/Employability_And_Soft_Skills_Certification.jpg" alt="Card image cap" />
                 <div class="card-body">
                   <h5 class="card-title">Employability and Soft Skills</h5>
@@ -298,9 +349,9 @@
                 </div>
               </div>
           </div>
-          <div class="card  m-4 p-1" id="fifth-certification">
+          <div class="card  rotate-card image-card-6 m-4 p-1 border-warning align-self-lg-center" id="fifth-certification">
             
-            <div class="card-body">
+            <div class="card-body border-warning">
               <h5 class="card-title">Bachelor</h5>
               <p class="card-text">
                 Secondary Education. 
