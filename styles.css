@@ -184,6 +184,7 @@ nav{
   
   .shaking-image:hover{
     animation: shakeAndSlide 0.8s ease-in-out;
+    width: 10dvw;
   }
   
   @keyframes shakeAndSlide {
@@ -455,8 +456,8 @@ nav{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #007bff; /* Color de fondo del botón */
-    color: #fff; /* Color del texto */
+    background-color: #feda6a;; /* Color de fondo del botón */
+    color: #1d1e22; /* Color del texto */
     border: none;
     border-radius: 50%;
     padding: 10px;
@@ -465,12 +466,13 @@ nav{
   }
   
   #scrollToTopBtn img {
-    width: 4dvw; /* Tamaño del icono de cohete */
-    height: 4dvh;
+    width: 1.9dvw; /* Tamaño del icono de cohete */
+    height: 4.2dvh;
   }
   
   #scrollToTopBtn:hover {
     background-color: #0056b3; 
+    color: #afafaf;
   }
   
 
