@@ -3,6 +3,9 @@ body{
     font-family: 'Urbanist', sans-serif;
 }
 
+img{
+    aspect-ratio: auto 16/9;
+}
 
 nav{
     background-color: #1d1e22 !important;
