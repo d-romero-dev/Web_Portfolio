@@ -47,7 +47,7 @@ nav{
 
 #h1-hero{
     font-family: 'Rosario', sans-serif;
-    font-size: 4em;
+    font-size: 3.0em;
     color: #feda6a;    
 }
 
@@ -78,12 +78,6 @@ nav{
         
         border-bottom: 0.1em dashed feda6a;
     }
-}
-
-
-#h1-question-mark{
-    color: #feda6a;
-    
 }
 
 #webEvolution{
