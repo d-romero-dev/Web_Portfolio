@@ -456,9 +456,9 @@ nav{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #feda6a;; /* Color de fondo del botón */
-    color: #1d1e22; /* Color del texto */
-    border: none;
+    background-color: #feda6a;; /* Button UP! - Background-color*/
+    color: #1d1e22; /* Text color*/
+    border: 2px solid #d4d4dc;
     border-radius: 50%;
     padding: 10px;
     cursor: pointer;
@@ -466,7 +466,7 @@ nav{
   }
   
   #scrollToTopBtn img {
-    width: 1.9dvw; /* Tamaño del icono de cohete */
+    width: 1.9dvw; /* Rocket icon size*/
     height: 4.2dvh;
   }
   
