@@ -41,3 +41,30 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
+//Event Listener to handle automated nav bar closing:
+// Used primarly on devices with sm-screens.
+
+// Adds a click event to each nav bar link.
+// Upon clicking a link, it checks if the navigation bar is open.
+// If so, simulates a click on the navigation bar button to close it.
+
+document.addEventListener('DOMContentLoaded', function () {
+  //Obtaining all link (<a>) elements inside the nav bar:
+  let navLinks = document.querySelectorAll('.navbar-nav a');
+
+  //Add a 'click' event to every <a> element:
+  navLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      //Automated nav bar closing when clicking in an <a> element:
+      let navbarToggler = document.querySelector('.navbar-toggler');
+      let navbarCollapse = document.querySelector('.navbar-collapse');
+
+      //Verify if the nav bar is open before trying to close it:
+      if (navbarToggler && navbarCollapse.classList.contains('show')) {
+        navbarToggler.click(); 
+      }
+    });
+  });
+});
+
