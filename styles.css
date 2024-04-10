@@ -184,7 +184,6 @@ nav{
   
   .shaking-image:hover{
     animation: shakeAndSlide 0.8s ease-in-out;
-    width: 10dvw;
   }
   
   @keyframes shakeAndSlide {
