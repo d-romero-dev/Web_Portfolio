@@ -172,6 +172,9 @@ nav{
   font-size: 1.4em;
 }
 
+#whosThis{
+    color:#feda6a;
+}
 
 #aboutMe-img{
     border: 2 px solid blue !important;
