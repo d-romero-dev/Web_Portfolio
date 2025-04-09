@@ -471,6 +471,19 @@ nav{
     background-color: #0056b3; 
     color: #afafaf;
   }
+
+  p.card-text.m-2.dromero {
+    border: 1px solid black; /* Borde de 1px de color negro */
+    padding: 2px; /* Un poco de espacio entre el borde y el texto */
+   }
+
+   p.card-text.m-2{
+    align-items: center;
+    text-align: center;
+    align-self: center;
+   }
+
+  
   
 
 
