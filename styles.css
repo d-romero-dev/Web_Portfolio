@@ -473,8 +473,8 @@ nav{
   }
 
   p.card-text.m-2.dromero {
-    border: 1px solid black; /* Borde de 1px de color negro */
-    padding: 2px; /* Un poco de espacio entre el borde y el texto */
+    border: 1px solid black;
+    padding: 2px; 
    }
 
    p.card-text.m-2{
